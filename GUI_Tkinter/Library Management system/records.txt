@@ -1,0 +1,10 @@
+
+Date:
+The name of the student is:
+The class and section of the student is:
+The name of the teacher is:Mr. Aryan Sisodiya
+the Admission Number of the student is:
+Information of book is: 
+
+Mobile number of the student is:
+----------------------------------------------------------------------------------------------
