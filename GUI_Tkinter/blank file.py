@@ -8,8 +8,7 @@ class login():
         self.root.title("Login system")
         self.root.geometry("1199x600+100+50")
         self.root.wm_resizable(0,0)
-        self.bg = ImageTk.PhotoImage(file="E:/GUI_Tkinter/background image.jpg")
-        Label(self.root, image=self.bg).place(x=0, y=0, relwidth=1, relheight=1)
+        Label(self.root).place(x=0, y=0, relwidth=1, relheight=1)
 
         f1 = Frame(self.root, bg="white")
         f1.place(x=150, y=150, height=340, width=500)

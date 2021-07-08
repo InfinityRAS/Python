@@ -122,7 +122,7 @@ def feedback():
     back.grid(row=3, column=0)
     Choose.grid(row=2, column=0)
 
-    # =================================================================================================================
+    # ============================================================================================
     Aryan_value = StringVar()
     Date_value = StringVar()
 
@@ -175,7 +175,7 @@ root.title("Aryan Account Creation")
 root.geometry("1366x700")
 root.minsize(1366, 700)
 root.maxsize(1366, 700)
-root.wm_iconbitmap("logo.ico")
+root.wm_iconbitmap("./logo.ico")
 
 # ============================ Menu bar =========================================================
 
@@ -357,7 +357,7 @@ def create():
             showerror("Aryan Account Creation", "Both Passwords are not same")
 
 
-# ==================================================================================================================
+# ===================================================================================================
 Confirm = Entry(f1, text="Terms_Confirm_value", font=("Arial", 20, "bold"), width=30, borderwidth=10, relief=RAISED,
                 fg="Black")
 Confirm.grid(column=2, row=4)
