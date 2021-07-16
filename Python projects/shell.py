@@ -1,4 +1,4 @@
-def greet():
+﻿def greet():
     """
     An todos-list app that i tried to make through tkinter but made this todos app through the basic python... 
     Hello Coders!,
@@ -10,31 +10,69 @@ def greet():
 
 def functionName() :
     global funcNameOriginal, funcName
+    try:
+        funcNameOriginal = str(input("AAOS Enter a Command> "))
 
-    funcNameOriginal = str(input("Enter a Command>>> "))
-    funcName = funcNameOriginal.replace(" ", "")
+        funcName = funcNameOriginal.replace(" ", "")
 
-    if funcName == "":
-        functionName()
-        func()
+        if funcName == "":
+            functionName()
+            func()
 
-    elif funcName == "exit":
-        print("Thanks for using this shell")
-        exit()
+        if funcName == "":
+            functionName()
+            func()
 
-    else:
-        return True
+        elif funcName == "exit":
+            print("")
+            print("Thanks for using this shell")
+            print("")
+            exit()
+        elif funcName == "exit":
+            print("")
+            print("Thanks for using this shell")
+            print("")
+            exit()
+        else:
+            return True
+
+    except KeyboardInterrupt:
+        print("Keyboard intrruption.. Please enter the command again\n")
+        funcNameOriginal = str(input("AAOS Enter a Command> "))
+
+        funcName = funcNameOriginal.replace(" ", "")
+
+        if funcName == "":
+            functionName()
+            func()
+
+        if funcName == "":
+            functionName()
+            func()
+
+        elif funcName == "exit":
+            print("")
+            print("Thanks for using this shell")
+            print("")
+            exit()
+        elif funcName == "exit":
+            print("")
+            print("Thanks for using this shell")
+            print("")
+            exit()
+        else:
+            return True
+
 
 def error(commandName):
     print("Invalid Command:", commandName)
     start()
 
 def func():
-    global funcName, funcNameOriginal
+    global funcName, funcNameOriginal, functions
 
-    functions = ["add", "show", "delete", "list", "about", "WhatIsMyName", "exit"]
+    functions = ["add", "show", "delete", "list", "about"]
     for funcs in functions:
-        # print(funcs)
         if funcName == funcs:
             eval(funcs + "()")
             start()
@@ -44,22 +82,82 @@ def func():
         error(funcNameOriginal)
 
 def add():
-    print("this is the add func")
+    try:
+        todo = str(input("Enter the Todo's name: "))
+        # print(todo)
+        with open("shell.txt", "a") as shell:
+            shell.write(f"\n{todo}")
+            shell.close()
+        with open("shell.txt", "a") as shell:
+            shell.write(f"\n{todo}")
+            shell.close()
+    
+    except KeyboardInterrupt:
+        print("Keyboard intrruption.. Please enter the command again\n")
+        todo = str(input("Enter the Todo's name: "))
+        # print(todo)
+        with open("shell.txt", "a") as shell:
+            shell.write(f"\n{todo}")
+            shell.close()
+        with open("shell.txt", "a") as shell:
+            shell.write(f"\n{todo}")
+            shell.close()
+
+    print("Your Todo has been successfully added!")
 
 def delete():
-    print("this is the delete func")
+    try:
+        show()
+        delTodo = input("Which todo do you want to delete? (Write its name) ")
+        with open("shell.txt", "r") as f:
+            lines = f.readlines()
+        with open("shell.txt", "w") as f:
+            for line in lines:
+                if line.strip("\n") != delTodo:
+                    f.write(line)
+        with open("shell.txt", "r") as f:
+            lines = f.readlines()
+        with open("shell.txt", "w") as f:
+            for line in lines:
+                if line.strip("\n") != delTodo:
+                    f.write(line)
+    except KeyboardInterrupt:
+        print("Keyboard intrruption.. Please enter the command again\n")
+        show()
+        delTodo = input("Which todo do you want to delete? (Write its name) ")
+        with open("shell.txt", "r") as f:
+            lines = f.readlines()
+        with open("shell.txt", "w") as f:
+            for line in lines:
+                if line.strip("\n") != delTodo:
+                    f.write(line)
+        with open("shell.txt", "r") as f:
+            lines = f.readlines()
+        with open("shell.txt", "w") as f:
+            for line in lines:
+                if line.strip("\n") != delTodo:
+                    f.write(line)
 
+    print("Your Todo has been successfully removed!")
+       
 def list():
-    print("this is the list func")
+    global functions
+    print("The list of the valid commands are given below:")
+    for i in functions:
+        print(i)
 
 def show():
-    print("this is the show func")
+    with open("shell.txt", "r") as shell:
+    # print(shell.readlines())
+        print("All your todos are:")
+        for todos in shell.readlines():
+            strTodo = todos.replace("\n", "")
+            print(strTodo)
+            shell.close()
+
 
 def about():
-    print("this is the about func")
-
-def WhatIsMyName():
-    print("My name is Aryan sisodiya")
+    print("Application Aryan Official Shell is a task automation and configuration management framework from Application Aryan Official, consisting of a command-line shell. Initially a Application Aryan Official App's component only, known as Application Aryan Official Shell, it was made open-source and cross-platform on June 7, 2021 with the introduction of Application Aryan Official Shell Core. It is formally made using the Python.\nVersion: 2.0.0")
 
 def start():
     value = functionName()
