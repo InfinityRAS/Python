@@ -1,4 +1,6 @@
-﻿def greet():
+﻿import time
+
+def greet():
     """
     An todos-list app that i tried to make through tkinter but made this todos app through the basic python... 
     Hello Coders!,
@@ -27,6 +29,7 @@ def functionName() :
             print("")
             print("Thanks for using this shell")
             print("")
+            time.sleep(1.5)
             exit()
         elif funcName == "exit":
             print("")
@@ -88,17 +91,10 @@ def add():
         with open("shell.txt", "a") as shell:
             shell.write(f"\n{todo}")
             shell.close()
-        with open("shell.txt", "a") as shell:
-            shell.write(f"\n{todo}")
-            shell.close()
-    
     except KeyboardInterrupt:
         print("Keyboard intrruption.. Please enter the command again\n")
         todo = str(input("Enter the Todo's name: "))
         # print(todo)
-        with open("shell.txt", "a") as shell:
-            shell.write(f"\n{todo}")
-            shell.close()
         with open("shell.txt", "a") as shell:
             shell.write(f"\n{todo}")
             shell.close()
@@ -157,7 +153,7 @@ def show():
 
 
 def about():
-    print("Application Aryan Official Shell is a task automation and configuration management framework from Application Aryan Official, consisting of a command-line shell. Initially a Application Aryan Official App's component only, known as Application Aryan Official Shell, it was made open-source and cross-platform on June 7, 2021 with the introduction of Application Aryan Official Shell Core. It is formally made using the Python.\nVersion: 2.0.0")
+    print("Application Aryan Official Shell is a task automation,\nconfiguration management framework from Application Aryan Official,\nconsisting of a command-line shell \nInitially a Application Aryan Official App's component only, known as Application Aryan Official Shell\nit was made open-source and cross-platform on June 7, 2021 \nwith the introduction of Application Aryan Official Shell Core\nIt is formally made using the Python.\nVersion: 2.0.0")
 
 def start():
     value = functionName()
