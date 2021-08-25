@@ -25,7 +25,7 @@ def feedback():
             # ===========================================================================================================
             s = Tk()
             s.title("Send feedback or Report Problem")
-            s.wm_iconbitmap("E:\GUI_Tkinter\Calculators\Calc.ico")
+            s.wm_iconbitmap("./Calc.ico")
             s.geometry("856x200")
             s.resizable(width=False, height=False)
 
@@ -48,7 +48,7 @@ def feedback():
     # ================================== Feedback ================================================================
     feed = Tk()
     feed.title("Send Feedback or Report Problem")
-    feed.wm_iconbitmap("E:\GUI_Tkinter\Calculators\Calc.ico")
+    feed.wm_iconbitmap("./Calc.ico")
     feed.geometry("1315x640")
     feed.resizable(width=False, height=False)
 
@@ -188,7 +188,7 @@ def about():
     a = Tk()
     a.geometry("1091x445")
     a.title("About")
-    a.wm_iconbitmap("E:\GUI_Tkinter\Calculators\Calc.ico")
+    a.wm_iconbitmap("./Calc.ico")
     a.resizable(width=False, height=False)
 
     # ===========================================================================================================
@@ -211,7 +211,7 @@ def about():
 
 def Help():
     ashok = Tk()
-    ashok.wm_iconbitmap("E:\GUI_Tkinter\Calculators\Calc.ico")
+    ashok.wm_iconbitmap("./Calc.ico")
     ashok.geometry("650x312")
     ashok.title("Help")
     ashok.resizable(width=False, height=False)
@@ -242,7 +242,7 @@ root.title("Calculator")
 root.geometry("1033x673")
 root.minsize(1033, 673)
 # root.resizable(width=False, height=False)
-root.wm_iconbitmap("E:/GUI_Tkinter/Calculators/Calc.ico")
+root.wm_iconbitmap("./Calc.ico")
 
 frame1 = Frame(root, bg="Light Green", borderwidth=50, relief=SUNKEN)
 frame1.pack(anchor="n", fill=X)

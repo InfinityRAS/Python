@@ -31,11 +31,6 @@ def functionName() :
             print("")
             time.sleep(1.5)
             exit()
-        elif funcName == "exit":
-            print("")
-            print("Thanks for using this shell")
-            print("")
-            exit()
         else:
             return True
 
@@ -53,11 +48,6 @@ def functionName() :
             functionName()
             func()
 
-        elif funcName == "exit":
-            print("")
-            print("Thanks for using this shell")
-            print("")
-            exit()
         elif funcName == "exit":
             print("")
             print("Thanks for using this shell")
@@ -111,22 +101,10 @@ def delete():
             for line in lines:
                 if line.strip("\n") != delTodo:
                     f.write(line)
-        with open("shell.txt", "r") as f:
-            lines = f.readlines()
-        with open("shell.txt", "w") as f:
-            for line in lines:
-                if line.strip("\n") != delTodo:
-                    f.write(line)
     except KeyboardInterrupt:
         print("Keyboard intrruption.. Please enter the command again\n")
         show()
         delTodo = input("Which todo do you want to delete? (Write its name) ")
-        with open("shell.txt", "r") as f:
-            lines = f.readlines()
-        with open("shell.txt", "w") as f:
-            for line in lines:
-                if line.strip("\n") != delTodo:
-                    f.write(line)
         with open("shell.txt", "r") as f:
             lines = f.readlines()
         with open("shell.txt", "w") as f:
@@ -153,7 +131,7 @@ def show():
 
 
 def about():
-    print("Application Aryan Official Shell is a task automation,\nconfiguration management framework from Application Aryan Official,\nconsisting of a command-line shell \nInitially a Application Aryan Official App's component only, known as Application Aryan Official Shell\nit was made open-source and cross-platform on June 7, 2021 \nwith the introduction of Application Aryan Official Shell Core\nIt is formally made using the Python.\nVersion: 2.0.0")
+    print("Application Aryan Official Shell is a task automation,\nconfiguration management framework from Application Aryan Official,\nconsisting of a command-line shell \nInitially a Application Aryan Official App's component only, known as Application Aryan Official Shell\nit was made open-source and cross-platform on June 7, 2021 \nwith the introduction of Application Aryan Official Shell Core\nIt is formally made using the Python.\nVersion: 3.0.0")
 
 def start():
     value = functionName()

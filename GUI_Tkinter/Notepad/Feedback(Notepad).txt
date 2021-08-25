@@ -13,3 +13,10 @@ Reported problem or gave a feedback on date:
 Problem reported or feedback given is:
 
 -------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+Feedback send?: Yes
+E-Mail Id of User is:
+Reported problem or gave a feedback on date:
+Problem reported or feedback given is:
+
+-------------------------------------------------------------------------------------------

@@ -1,10 +1,8 @@
 
-Date:
-The name of the student is:
-The class and section of the student is:
-The name of the teacher is:Mr. Aryan Sisodiya
-the Admission Number of the student is:
-Information of book is: 
+-------------------------------------------------------------------------------------------
+Feedback send?: Yes
+E-Mail Id of User is:
+Reported problem or gave a feedback on date:
+Problem reported or feedback given is:
 
-Mobile number of the student is:
-----------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
