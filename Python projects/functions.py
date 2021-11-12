@@ -7,7 +7,7 @@ By using the 'def' keyword
 # Syntax for creating a function
 """ 
 def (function name)() :
-    (set of code here)
+    // code
 """   
 
 # Example 1

@@ -1,4 +1,5 @@
 ﻿import time
+import sys
 
 def greet():
     """
@@ -30,7 +31,8 @@ def functionName() :
             print("Thanks for using this shell")
             print("")
             time.sleep(1.5)
-            exit()
+            # exit()
+            sys.exit()
         else:
             return True
 
@@ -52,7 +54,8 @@ def functionName() :
             print("")
             print("Thanks for using this shell")
             print("")
-            exit()
+            # exit()
+            sys.exit()
         else:
             return True
 

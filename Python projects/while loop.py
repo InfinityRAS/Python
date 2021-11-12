@@ -14,7 +14,7 @@ def loop():                     # we are defining a function using 'def' keyword
 
     else:
         while a >= b:
-            print(math.pow(a, c))
+            print(math.pow(a, c)) # = math.pow(a, c) = a**c
             a -= 1
 
     input()
@@ -47,3 +47,10 @@ loop()
 loop()
 loop()
 loop()
+loop()
+
+# the above code is equal to the code given below
+i = 1
+while i <= 26:
+    loop()
+    i += 1
