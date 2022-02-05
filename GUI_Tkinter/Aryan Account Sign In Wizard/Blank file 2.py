@@ -356,7 +356,7 @@ if __name__ == '__main__':
     root.config(menu=Menubar)
 
 # =========================================================== Background image ==========================
-    bg = ImageTk.PhotoImage(file="C:/Users/Ashok Kumar/Desktop/Aryan/GUI_Tkinter/Aryan Account Sign In Wizard/background image.jpg")
+    bg = ImageTk.PhotoImage(file="./background image.jpg")
     Label(root, image=bg).place(x=0, y=0, relwidth=1, relheight=1)
 
 # ========================================== Frames and Labels ======================================= 
