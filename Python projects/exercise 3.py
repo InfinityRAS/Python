@@ -17,7 +17,7 @@ def prime_or_not():
             print('Number is prime')
             # print(i)
 
-    AskOkCancel = input('Do you want to continue? (y/n): ')
+    AskOkCancel = input('Do you want to continue? (y/n):')
 
     if AskOkCancel == 'y':
         prime_or_not()
@@ -26,4 +26,5 @@ def prime_or_not():
         print('Thanks!')
 
 prime_or_not()
+input()
 

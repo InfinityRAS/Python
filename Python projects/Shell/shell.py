@@ -9,7 +9,7 @@ def greet():
         as i said earlier that this project isn't complete yet!, but i try this project to complete as soon as possible... I shall also try to make a GUI of this!, using Tkinter.. but later on!... any contributions are always Welcome 🙂🙂🙂🙂🙂🙂🙂🙂🙂
     """
 
-    print("Application Aryan Official Shell\nCopyright (c) 2021 Application Aryan Official. All rights reserved\n")
+    print("Application Aryan Official Shell\nCopyright (c) 2023-2024 Application Aryan Official. All rights reserved\n")
 
 def functionName() :
     global funcNameOriginal, funcName
@@ -17,10 +17,6 @@ def functionName() :
         funcNameOriginal = str(input("AAOS Enter a Command> "))
 
         funcName = funcNameOriginal.replace(" ", "")
-
-        if funcName == "":
-            functionName()
-            func()
 
         if funcName == "":
             functionName()
@@ -41,10 +37,6 @@ def functionName() :
         funcNameOriginal = str(input("AAOS Enter a Command> "))
 
         funcName = funcNameOriginal.replace(" ", "")
-
-        if funcName == "":
-            functionName()
-            func()
 
         if funcName == "":
             functionName()

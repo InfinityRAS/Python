@@ -106,7 +106,6 @@ def calc():
                         z = float(input("Enter the radius of the circle:"))
                         area(z)
                 else:
-                    end()
                     return
 
 

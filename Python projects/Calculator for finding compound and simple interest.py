@@ -17,7 +17,7 @@ print("And Amount is:", h)
 print("We hope that you have get your answer")
 print("-----------------------------------------------------------------------------------------------")
 m = str(input("Do you want to find the simple interest also? (Please Answer in 'yes' or 'no'):"))
-if m == 'Yes':
+if m == 'yes':
     print("Hello!")
     print("Welcome", j, "to Application Aryan Official", "\n",
           "Here you can find the simple interest in just 2 seconds",
@@ -35,3 +35,4 @@ if m == 'Yes':
 else:
     print("Thanks for Choosing Application Aryan Official")
 print("-----------------------------------------------------------------------------------------------")
+input()

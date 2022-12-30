@@ -2,6 +2,8 @@ from tkinter import *
 from PIL import ImageTk
 import tkinter.messagebox as tkmsbx
 
+loginId = 'aryan.sisodiya1306987@aryan.com'
+password = 'aryan.sis.1306987'
 
 # ================================================= functions ========================================
 global aryan_entry
@@ -11,8 +13,8 @@ def sign():
         tkmsbx.showerror("Sign In", "Both fields are reqiured")
 
     else:
-        if Aryan_Entry.get() == 'aryan.sisodiya1306987@aryan.com':
-            if pass_Entry.get() == 'aryan.sis.1306987':
+        if Aryan_Entry.get() == loginId:
+            if pass_Entry.get() == password:
                 kanha = Tk()
                 kanha.title("Aryan Account Sign In")
                 kanha.iconbitmap("logo.ico")
@@ -341,7 +343,7 @@ if __name__ == '__main__':
     root.title("Aryan Account Sign In")
     root.geometry("1199x600+100+50")
     root.resizable(0, 0)
-    root.iconbitmap("logo.ico")
+    root.iconbitmap("./logo.ico")
 
 # ========================================= MenuBar==========================================================
     Menubar = Menu(root)

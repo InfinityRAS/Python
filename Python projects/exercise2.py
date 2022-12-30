@@ -22,3 +22,4 @@ def leapOrNot():
 
 
 leapOrNot()
+input()

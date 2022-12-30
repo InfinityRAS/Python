@@ -102,7 +102,7 @@ def add():
             book = Book(issuerI, nameI, authorI, typeI, dateI)
             list = book.getDetails()
             with open(".\shell.txt", "a") as shell:
-                print(list)
+                # print(list)
                 shell.write(f"{list}\n")
                 shell.close()
 

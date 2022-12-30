@@ -67,8 +67,7 @@ def calc():
 
     else:
         print("Please answer in either 'Premium mode' or 'Quick answer mode'")
-
-    print("Thanks for Choosing Application Aryan Official")
+        calc()
 
 # ====================================end====================================================
 
