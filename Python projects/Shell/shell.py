@@ -59,12 +59,10 @@ def error(commandName):
 def func():
     global funcName, funcNameOriginal, functions
 
-    functions = ["add", "show", "delete", "list", "about"]
-    for funcs in functions:
-        if funcName == funcs:
-            eval(funcs + "()")
-            start()
-            return ""
+    if (funcName in functions):
+        eval(funcName+"()")
+        start()
+        return True
 
     else:
         error(funcNameOriginal)
