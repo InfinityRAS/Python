@@ -3,13 +3,13 @@ import sys
 
 def greet():
     """
-    An todos-list app that i tried to make through tkinter but made this todos app through the basic python... 
+    An todos-list app, and integrated login system that i tried to make through tkinter but made this todos app through the basic python... 
     Hello Coders!,
         This project is not complete yet!... I've made this a shell where you can execute the commands that are valid, my first attempt to made a app like this..! that is a shell, you can add the todos by using the commands
         as i said earlier that this project isn't complete yet!, but i try this project to complete as soon as possible... I shall also try to make a GUI of this!, using Tkinter.. but later on!... any contributions are always Welcome 🙂🙂🙂🙂🙂🙂🙂🙂🙂
     """
 
-    print("Application Aryan Official Shell\nCopyright (c) 2023-2024 Application Aryan Official. All rights reserved\n")
+    print("Infinity Shell\nCopyright (c) 2023-2024 Infinity. All rights reserved\n")
 
 def functionName() :
     global funcNameOriginal, funcName
@@ -58,6 +58,7 @@ def error(commandName):
 
 def func():
     global funcName, funcNameOriginal, functions
+    functions = ["add", "show", "delete", "about", "list", "login"]
 
     if (funcName in functions):
         eval(funcName+"()")
@@ -113,6 +114,13 @@ def list():
     for i in functions:
         print(i)
 
+def login():
+    try:
+        print("code is in progress")
+
+    except KeyboardInterrupt:
+        pass
+
 def show():
     with open("shell.txt", "r") as shell:
     # print(shell.readlines())
@@ -124,7 +132,7 @@ def show():
 
 
 def about():
-    print("Application Aryan Official Shell is a task automation,\nconfiguration management framework from Application Aryan Official,\nconsisting of a command-line shell \nInitially a Application Aryan Official App's component only, known as Application Aryan Official Shell\nit was made open-source and cross-platform on June 7, 2021 \nwith the introduction of Application Aryan Official Shell Core\nIt is formally made using the Python.\nVersion: 3.0.0")
+    print("Infinity Shell is a task automation,\nconfiguration management framework from Infinity,\nconsisting of a command-line shell \nInitially a Infinity App's component only, known as Infinity Shell\nit was made open-source and cross-platform on June 7, 2021 \nwith the introduction of short lived Infinity Shell Core\nIt is formally made using the Python.\nVersion: 4.0.0")
 
 def start():
     value = functionName()

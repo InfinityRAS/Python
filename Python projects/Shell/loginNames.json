@@ -1,0 +1,15 @@
+[
+    {
+        "logId": "ary",
+        "logPass": "aryinf123",
+        "active": true
+    },
+    {
+        "logId": "kan",
+        "logPass": "kaninf123",
+        "active": false 
+    }
+]
+
+
+
